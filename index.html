@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" contain="IE-edge">
+	<meta name="viewport" contain="width-device-width,initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://kit.fontawesome.com/ffcf11ba6e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="images/logo.png" class="logo">
+			<ul id="sidemenu">
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Skills</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+			</ul>
+			<i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+			<h1>Hi, I am a <span class="typing" style="color: red"></span><br>from India</h1>
+		</div>
+	</div>
+</div>
+<!-- ========================================about============================================ -->
+<div id="about">
+	<div class='container'>
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/user.jpg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p>PHP is a general-purpose scripting language geared toward web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1994. The PHP reference implementation is now produced by The PHP Group</p>
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+				</div>
+				<div class="tab-contents active-tab" id='skills'>
+					<ul>
+						<li><span>HTML / CSS / JAVASCRIPT</span><br>Front end development for dynamic websites.</li>
+						<li><span>PHP / MySQL</span><br>Backend with SQL and database management.</li>
+						<li><span>Data Structures & Algos</span><br>Basics of DSA in python language</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li><span>Technical Content Writer</span><br>Publishing articles related to web development and DSA.</li>
+						<li><span>Freelancing</span><br>Using my web-dev knowledge to built dynamic and easy-to-use websites.</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>Graduation - B.Tech in CSE</span><br>4th year Student<br>Vellore Institute of Technology,Chennai</li>
+						<li><span>Class 12th</span><br>ISC in PCM<br>City Montessori School,Lucknow</li>
+						<li><span>Class 10th</span><br>ICSE<br>City Montessori School,Lucknow</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ================================services====================================================== -->
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Frontend Dev</h2>
+					<p>Using my web-dev knowledge to built dynamic and easy-to-use websites.Using my web-dev knowledge to built dynamic and easy-to-use websites.Using my web-dev knowledge to built dynamic and easy-to-use websites.</p>
+					<a href="#portfolio">Learn more</a>
+				</div>
+				<div>
+					<i class="fa-solid fa-database"></i>
+					<h2>Backend Dev</h2>
+					<p>Using my web-dev knowledge to built dynamic and easy-to-use websites.Using my web-dev knowledge to built dynamic and easy-to-use websites.Using my web-dev knowledge to built dynamic and easy-to-use websites.</p>
+					<a href="#portfolio">Learn more</a>
+				</div>
+				<div>
+					<i class="fa-solid fa-computer"></i>
+					<h2>Data Structure + Algorithms</h2>
+					<p>Using my web-dev knowledge to built dynamic and easy-to-use websites.Using my web-dev knowledge to built dynamic and easy-to-use websites.Using my web-dev knowledge to built dynamic and easy-to-use websites.</p>
+					<a href="#portfolio">Learn more</a>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- ==========================portfolio================================ -->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Works</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="images/work1.jpg">
+				<div class="layer">
+					<h3>Blog Website</h3>
+					<p>A Full stack website built using PHP MySQL to write blogposts.</p>
+					<a href="https://github.com/pranjalpranjal433?tab=repositories" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/work2.png">
+				<div class="layer">
+					<h3>Chat</h3>
+					<p>A chat application in php to provide anonymous and secure conversations among peoples.</p>
+					<a href="https://github.com/pranjalpranjal433/chatroom" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/work3.png">
+				<div class="layer">
+					<h3>Leetcode(USER)</h3>
+					<p>A site to improve Your DSA skills and practise Algorithms.</p>
+					<a href="https://leetcode.com/pranjalpranjal433/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+		</div>
+		<a href="https://github.com/pranjalpranjal433" target="_blank" class="btn" onclick="gitdir()">See More</a>
+	</div>
+</div>
+<!-- =============================contact====================================== -->
+
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-paper-plane"></i> pranjalpranjal433@gmail.com</p>
+				<div class="social-icons">
+					<a href="https://github.com/pranjalpranjal433" target="_blank"><i class="fa-brands fa-github"></i></a>
+					<a href="#contact"><i class="fa-brands fa-facebook" onclick="altfun('facebook')"></i></a>
+					<a href="#contact"><i class="fa-brands fa-linkedin" onclick="altfun('linkedin')"></i></a>
+					<a href="#contact"><i class="fa-brands fa-twitter" onclick="altfun('twitter')"></i></a>
+					<a href="#contact"><i class="fa-brands fa-instagram" onclick="altfun('instagram')"></i></a>
+				</div>
+				<a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="Email" placeholder="Your Email" required>
+					<textarea name="message" rows="6" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+				<span id="msg"></span>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Made with <i class="fa-solid fa-heart"></i> : Pranjal Singh</p>
+	</div>
+</div>
+
+<script >
+	var tablinks =document.getElementsByClassName("tab-links");
+	var tabcontents =document.getElementsByClassName("tab-contents");
+	console.log(tablinks);
+	console.log(tabcontents);
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+	function altfun(vari){
+		x="Pranjal's "+vari+" account is not currently reachable.Please Use the Gmail id provided.Thanks."
+		alert(x);
+	}
+	function gitdir(){
+		x="To See More Would you like to be directed to Pranjal's Github Account?"
+		alert(x);
+	}
+</script>
+<script type="text/javascript">
+	var sidemenu=document.getElementById("sidemenu");
+	function openmenu(){
+		sidemenu.style.right="0";
+	}
+	function closemenu(){
+		sidemenu.style.right="-200px";
+	}
+</script>
+<script type="text/javascript">
+
+	var typed=new Typed(".typing",{
+		strings:["Student","Programmer","Web Developer","Learner"],
+		typeSpeed:100,
+		backSpeed:60,
+		loop:true
+	});
+</script>
+
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwsGcx1WYYiWHY-BiNQX_CDkix5rMwJVbHW8pokuGsZ4Hxh1mVe3mNM58YwZ3dGYPGQnA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      	msg.innerHTML = "Message sent Successfully!!!";
+      	setTimeout(function(){
+      		msg.innerHTML = ""
+      	},5000)
+      	form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
